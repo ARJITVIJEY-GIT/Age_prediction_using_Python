@@ -1,0 +1,11 @@
+database={"user1":"pass1","user2":"pass2","user3":"pass3","user4":"pass4"}
+username=input("Enter the username: ")
+
+if username in database.keys():
+    password=input("Enter the password: ")
+    if database[username]==password:
+        print("You are logged in")
+    else:
+        print("Wrong password")
+else:
+    print("You are not registered")
